@@ -27,6 +27,18 @@
   <!-- Fonts and Material Icons -->
   <link rel="stylesheet" as="font"
     href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700|Material+Icons" />
+
+  <style>
+    /* Fix for Experience Section Scrolling on Desktop */
+    @media (min-width: 1024px) {
+      .experience-content {
+        overflow-y: auto;
+        height: 100vh;
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+    }
+  </style>
 </head>
 
 <body class="slides horizontal simplifiedMobile animated">
@@ -225,15 +237,15 @@
         <ul class="menu">
           <li><a href="#">Home</a></li>
           <li><a href="#experience">Experience</a></li>
-	  <li><a href="#education">Education</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
-	  <li><a href="#apps">Apps</a></li>
+          <li><a href="#apps">Apps</a></li>
           <li><a href="#info">Info</a></li>
         </ul>
       </div>
-      <div class="right"><a class="button blue gradient"
-          href="https://play.google.com/store/apps/developer?id=TVINM" target="_blank">Developer Page</a></div>
+      <div class="right"><a class="button blue gradient" href="https://play.google.com/store/apps/developer?id=TVINM"
+          target="_blank">Developer Page</a></div>
     </div>
     <div class="sections compact hidden">
       <div class="left"><a href="#" title="Slides Framework"><img width=100 src="assets/img/logo1.png">
@@ -259,10 +271,10 @@
       <ul class="mainMenu margin-top-3">
         <li><a href="#">Home</a></li>
         <li><a href="#experience">Experience</a></li>
- 	<li><a href="#education">Education</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-	<li><a href="#apps">Apps</a></li>
+        <li><a href="#apps">Apps</a></li>
         <li><a href="#info">Info</a></li>
       </ul>
       <ul class="social opacity-8">
@@ -310,14 +322,14 @@
         </div>
       </div>
     </div>
-    <div class="background" style="background-image:url(assets/img/background/img-34.png)"></div>
+    <div class="background" style="background-image:url(assets/img/background/img-34.jpg)"></div>
   </section>
 
-  
+
 
   <!-- Slide 3 (#27) -->
   <section class="slide fade-6" data-name="experience">
-    <div class="content" style="overflow-y: auto; height: 100vh; padding-top: 80px; padding-bottom: 80px;">
+    <div class="content experience-content">
       <div class="container">
         <div class="wrap">
 
@@ -349,7 +361,7 @@
                     Optimized rate-limiting and Layer 7 BOT rules<br>
                     • <strong>Automation:</strong> Built Python/Jenkins automations for security policies, SSL
                     renewals, and validation steps.</p>
-                  <p class="opacity-8 small"><strong>Achievements:</strong> Successfully automated F5 APM/AFM policies 
+                  <p class="opacity-8 small"><strong>Achievements:</strong> Successfully automated F5 APM/AFM policies
                     using Python and REST-API. Mitigated numerous critical DDoS and Web app attacks.</p>
                 </div>
               </li>
@@ -398,7 +410,8 @@
               <li class="col-7-12 left cell-26">
                 <h1 class="ae-1 fromLeft">Educational Qualification</h1>
                 <div class="ae-2 fromLeft">
-                  <p class="opacity-8">&#8226; Studied Bachelor of Engineering (B.E) Electronics and Communicationand graduated as First
+                  <p class="opacity-8">&#8226; Studied Bachelor of Engineering (B.E) Electronics and Communicationand
+                    graduated as First
                     class with Distinction.<br>
                     &#8226; Worked and created various embedded projects on IOT and AI integration.<br>
                     &#8226; Contributed for One of the 3d design Patent Proposals</p>
@@ -406,9 +419,11 @@
                 <div class="relative">
                   <img src="assets/img/icon-3.png" class="ae-3 fromCenter app-26" alt="app" />
                   <div class="text-26">
-                    <h3 class="ae-3 fromRight">Graduated at 2020 with 8.88 CGPA at SNS College of Technology, Coimbatore</h3>
+                    <h3 class="ae-3 fromRight">Graduated at 2020 with 8.88 CGPA at SNS College of Technology, Coimbatore
+                    </h3>
                     <div class="ae-5 fromRight">
-                      <p class="tiny opacity-6">Completed Schooling from Amrita Vidyalayam, Coimbatore with 85.6% in 12th Grade and 8.8 CGPA in 10th Grade</p>
+                      <p class="tiny opacity-6">Completed Schooling from Amrita Vidyalayam, Coimbatore with 85.6% in
+                        12th Grade and 8.8 CGPA in 10th Grade</p>
                     </div>
                   </div>
                 </div>
@@ -451,19 +466,23 @@
             <ul class="grid fixedSpaces left margin-top-10 margin-bottom-10">
               <li class="col-3-12 col-tablet-1-2 col-phablet-1-1 ae-4 fromLeft">
                 <h3>Python</h3>
-                <p class="tiny opacity-6">Worked on for creating websites using the Django Framework, Security Tool Automation and Big-IP Policy Automation</p>
+                <p class="tiny opacity-6">Worked on for creating websites using the Django Framework, Security Tool
+                  Automation and Big-IP Policy Automation</p>
               </li>
               <li class="col-3-12 col-tablet-1-2 col-phablet-1-1 ae-5 fromLeft">
                 <h3>DDoS</h3>
-                <p class="tiny opacity-6">Worked on DDoS Products like Arbor and Radware to prevent organization from Distributed Denial Of Service Attacks</p>
+                <p class="tiny opacity-6">Worked on DDoS Products like Arbor and Radware to prevent organization from
+                  Distributed Denial Of Service Attacks</p>
               </li>
               <li class="col-3-12 col-tablet-1-2 col-phablet-1-1 ae-6 fromLeft">
                 <h3>WAF (Web application Firewall)</h3>
-                <p class="tiny opacity-6">Implemented WAF policies to protect against common web application vulnerabilities with F5 Big-IP ASM, Cloudflare, Silverline, Radware </p>
+                <p class="tiny opacity-6">Implemented WAF policies to protect against common web application
+                  vulnerabilities with F5 Big-IP ASM, Cloudflare, Silverline, Radware </p>
               </li>
               <li class="col-3-12 col-tablet-1-2 col-phablet-1-1 ae-7 fromLeft">
                 <h3>Cloud Security</h3>
-                <p class="tiny opacity-6">Worked on Azure, AWS and Cloudflare to secure the cloud hosted applications</p>
+                <p class="tiny opacity-6">Worked on Azure, AWS and Cloudflare to secure the cloud hosted applications
+                </p>
               </li>
             </ul>
           </div>
@@ -507,7 +526,8 @@
               <li class="col-4-12 ae-4">
                 <h3>Automated F5 Big-IP APM and AFM policy using Python</h3>
 
-                <h6 class="bold small opacity-7">Automated F5 Big-IP APM and AFM policy modification using Python and REST API<br></h6>
+                <h6 class="bold small opacity-7">Automated F5 Big-IP APM and AFM policy modification using Python and
+                  REST API<br></h6>
 
 
                 <div class="margin-top-3 margin-bottom-3 equalElement ae-6">
@@ -535,7 +555,7 @@
                     <li class="opacity-8">Raspberry Pi</li>
                     <li class="opacity-8">Google Assisstant SDK</li>
                     <li class="opacity-8">WiFi,Relay Module</li>
-		    <li class="opacity-8">Blynk, IFTTT</li>
+                    <li class="opacity-8">Blynk, IFTTT</li>
                     <li class="opacity-8">Appliances</li>
                   </ul>
                 </div>
@@ -573,7 +593,7 @@
   </section>
 
 
-<!-- Slide 2 (#60) -->
+  <!-- Slide 2 (#60) -->
   <section class="slide fade-6 kenBurns" data-name="apps">
     <div class="content">
       <div class="container">
@@ -591,20 +611,19 @@
               </li>
               <li class="col-6-12 left ae-5 fromCenter">
                 <ul class="slider animated margin-top-4" data-slider-id="60-1">
-                  
- 		<li class="selected fromCenter">
+
+                  <li class="selected fromCenter">
                     <div data-popup-id="60-3">
-                      <a href="https://beaconbot.in/" target="_blank"><img
-                          class="wide" src="assets/img/beaconbot_logo.png" alt="BeaconBot" /></a>
+                      <a href="https://beaconbot.in/" target="_blank"><img class="wide"
+                          src="assets/img/beaconbot_logo.png" alt="BeaconBot" /></a>
                     </div>
-                    <div class="right"><a
-                        href="https://beaconbot.in/"
-                        target="_blank" class="button blue gradient">Visit Website</a></div>
+                    <div class="right"><a href="https://beaconbot.in/" target="_blank"
+                        class="button blue gradient">Visit Website</a></div>
                   </li>
                   <li class="fromCenter">
                     <div data-popup-id="60-3">
-                      <a href="https://play.google.com/store/apps/details?id=com.spskalyanmachine.designer" target="_blank"><img
-                          class="wide" src="assets/img/thumb_3.jpg" alt="SPS" /></a>
+                      <a href="https://play.google.com/store/apps/details?id=com.spskalyanmachine.designer"
+                        target="_blank"><img class="wide" src="assets/img/thumb_3.jpg" alt="SPS" /></a>
                     </div>
                     <div class="right"><a
                         href="https://play.google.com/store/apps/details?id=com.spskalyanmachine.designer"
